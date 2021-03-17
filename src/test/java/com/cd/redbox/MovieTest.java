@@ -15,6 +15,29 @@ public class MovieTest {
         //then
         Assert.assertEquals(actual, expected);
     }
+    @Test
+    public void getTitleTest() {
+        //given
+        Movie movie = new Movie(2L, "Ready Player One");
+        //when
+        String expected = "Ready Player One";
+        String actual = movie.getTitle();
+        //then
+        Assert.assertEquals(expected,actual);
+    }
 
+    @Test
+    public void setIdTest(){
+       // given
+       Movie movie = new Movie(8L, "Ready Player Two");
+       movie.setId(11L);
+       Long expected = 11L;
+       Long actual = movie.getId();
+       Assert.assertEquals(expected, actual);
 
+    }
+
+    @Test
+    publ
 }
+

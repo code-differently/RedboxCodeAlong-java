@@ -11,14 +11,15 @@ public class Movie {
     }
 
     public Long getId() {
-        return null;
+        return this.id;
     }
 
     public void setId(Long id) {
+        this.id= id;
     }
 
     public String getTitle() {
-        return null;
+        return this.title;
     }
 
     public void setTitle(String title) {
