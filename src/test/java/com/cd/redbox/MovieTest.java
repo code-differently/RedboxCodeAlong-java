@@ -38,6 +38,13 @@ public class MovieTest {
     }
 
     @Test
-    publ
+    public void setTitleTest(){
+        //give
+        Movie movie =new Movie(8L,"Ready Player Two");
+        movie.setTitle("Sister Act");
+        String expected = "Sister Act";
+        String actual = movie.getTitle();
+        Assert.assertEquals(expected, actual);
+    }
 }
 
